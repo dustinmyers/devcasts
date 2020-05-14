@@ -183,10 +183,22 @@ const Home = () => {
           font-size: 1.5rem;
         }
 
+        @media (max-width: 830px) {
+          .timer {
+            font-size: 2rem;
+          }
+          .timer-wrapper {
+            font-size: 1.5rem;
+          }
+        }
+
         @media (max-width: 600px) {
-          .grid {
-            width: 100%;
-            flex-direction: column;
+          .timer {
+            font-size: 1.5rem;
+          }
+          .timer-wrapper,
+          footer {
+            font-size: 1rem;
           }
         }
       `}</style>
