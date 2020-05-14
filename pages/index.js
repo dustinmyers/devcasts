@@ -110,19 +110,17 @@ const Home = () => {
         </p>
       </main>
 
-      <footer>
-        <p>
-          Subscribe now on{" "}
-          <a
-            href="https://twitch.tv/snowkid314"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Twitch
-          </a>{" "}
-          to be notified
-        </p>
-      </footer>
+      <p>
+        Subscribe now on{" "}
+        <a
+          href="https://twitch.tv/snowkid314"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Twitch
+        </a>{" "}
+        to be notified
+      </p>
 
       <style jsx>{`
         .container {
@@ -174,15 +172,6 @@ const Home = () => {
           max-width: 80%;
         }
 
-        footer {
-          width: 100%;
-          height: 100px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          font-size: 1.5rem;
-        }
-
         @media (max-width: 830px) {
           .timer {
             font-size: 2rem;
@@ -203,9 +192,6 @@ const Home = () => {
             font-size: 1.5rem;
           }
           .timer-wrapper,
-          footer {
-            font-size: 1rem;
-          }
         }
       `}</style>
 
