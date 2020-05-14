@@ -102,7 +102,7 @@ const Home = () => {
 
       <main>
         <img className="logo-image" src="/logo-clean.png" alt="devcasts logo" />
-        {/* <p className="subtitle">podcast (w/guests) + live coding</p> */}
+        <p className="subtitle">live coding... podcast style!</p>
         <div className="flex-grow" />
         <p className="timer-wrapper">
           <span className="timer">{counter}</span>
@@ -187,6 +187,9 @@ const Home = () => {
           .timer {
             font-size: 2rem;
           }
+          .subtitle {
+            font-size: 1.8rem;
+          }
           .timer-wrapper {
             font-size: 1.5rem;
           }
@@ -194,6 +197,9 @@ const Home = () => {
 
         @media (max-width: 600px) {
           .timer {
+            font-size: 1.5rem;
+          }
+          .subtitle {
             font-size: 1.5rem;
           }
           .timer-wrapper,
