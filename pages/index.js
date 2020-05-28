@@ -116,7 +116,7 @@ const Home = () => {
             <div className="guest">
               <p>June 17, 2020</p>
               <h3>Christina Gorton</h3>
-              <p>react + greensock</p>
+              <p>React + Greensock</p>
               <img src="christina.png" alt="Christina Gorton" />
             </div>
           </a>
@@ -124,7 +124,7 @@ const Home = () => {
             <div className="guest">
               <p>July 1, 2020</p>
               <h3>Joram Clervius</h3>
-              <p>getting into tech</p>
+              <p>Getting into tech</p>
               <img src="joram-transparent.png" alt="Joram Clervius" />
             </div>
           </a>
