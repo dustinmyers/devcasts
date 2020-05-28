@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "Suisse Intl";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Suisse Intl"), local("Suisse Intl"),
+    url(./public/SuisseIntl-Regular.otf) format("opentype");
+}
+
+body {
+  /* background: url(public/neon-pixels.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; */
+  font-family: "Suisse Intl";
+  background-color: #0b1035;
+}
