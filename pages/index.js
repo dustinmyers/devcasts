@@ -139,7 +139,7 @@ const Home = () => {
         </div>
         <div className="flex-grow" />
         <p className="timer-wrapper">
-          <span className="timer">{counter}</span>
+          Launching in <span className="timer">{counter}</span>
           (Jun 3, 3pm MDT)
         </p>
       </main>
@@ -190,6 +190,11 @@ const Home = () => {
           width: 100%;
         }
 
+        a {
+          color: #e12c9d;
+          font-weight: bold;
+        }
+
         .flex-grow {
           flex-grow: 1;
         }
@@ -237,6 +242,7 @@ const Home = () => {
         main a {
           color: #fff;
           text-decoration: none;
+          font-weight: normal;
         }
 
         .guest > img {
