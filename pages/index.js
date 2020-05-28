@@ -145,7 +145,7 @@ const Home = () => {
       </main>
 
       <p>
-        Subscribe now on{" "}
+        Follow and subscribe now on{" "}
         <a
           href="https://twitch.tv/snowkid314"
           target="_blank"
