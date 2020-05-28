@@ -100,9 +100,29 @@ const Home = () => {
         <meta name="theme-color" content="#ffffff"></meta>
       </Head>
 
+      <img className="logo-bg" src="logo-headphones-bg.png" />
       <main>
-        <img className="logo-image" src="/logo-clean.png" alt="devcasts logo" />
         <p className="subtitle">live coding... podcast style!</p>
+        <div className="guests">
+          <div className="guest">
+            <p>June 3, 2020</p>
+            <h3>Tanner Linsley</h3>
+            <p>react-query</p>
+            <img src="tanner.png" alt="Tanner Linsley" />
+          </div>
+          <div className="guest">
+            <p>June 17, 2020</p>
+            <h3>Christina Gorton</h3>
+            <p>react + greensock</p>
+            <img src="christina.png" alt="Christina Gorton" />
+          </div>
+          <div className="guest">
+            <p>July 1, 2020</p>
+            <h3>Joram Clervius</h3>
+            <p>getting into tech</p>
+            <img src="joram-transparent.png" alt="Joram Clervius" />
+          </div>
+        </div>
         <div className="flex-grow" />
         <p className="timer-wrapper">
           <span className="timer">{counter}</span>
@@ -124,18 +144,26 @@ const Home = () => {
 
       <style jsx>{`
         .container {
-          min-height: 100vh;
+          height: calc(100vh - 86px);
           padding: 0 0.5rem;
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          background: url(neon-pixels.jpg) no-repeat center center fixed;
-          -webkit-background-size: cover;
-          -moz-background-size: cover;
-          -o-background-size: cover;
-          background-size: cover;
-          color: #ff30aa;
+          color: #fff;
+          position: relative;
+          overflow: hidden;
+        }
+
+        .logo-bg {
+          position: absolute;
+          bottom: -5%;
+          right: -5%;
+          width: 80%;
+          max-width: 600px;
+          overflow: hidden;
+          z-index: -1;
+          opacity: .7;
         }
 
         main {
@@ -145,6 +173,7 @@ const Home = () => {
           flex-direction: column;
           align-items: center;
           justify-content: space-between;
+          width: 100%;
         }
 
         .flex-grow {
@@ -170,6 +199,36 @@ const Home = () => {
         .logo-image {
           width: 800px;
           max-width: 80%;
+        }
+
+        .guests {
+          display: flex;
+          flex-flow: row wrap;
+          height: 100%;
+          align-items: center;
+        }
+
+        .guest {
+          width: 250px;
+          padding: 16px 16px 0;
+          margin: 0 32px;
+          text-align: center;
+          background-color: #161e5a;
+          border-radius: 12px;
+          box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        }
+
+        .guest > img {
+          width: 100%;
+        }
+
+        .guest > p {
+          margin: 0;
+        }
+
+        .guest > h3 {
+          margin: .6em;
+          font-size: 1.5em;
         }
 
         @media (max-width: 830px) {
