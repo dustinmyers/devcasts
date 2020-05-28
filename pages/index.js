@@ -104,24 +104,38 @@ const Home = () => {
       <main>
         <p className="subtitle">live coding... podcast style!</p>
         <div className="guests">
-          <div className="guest">
-            <p>June 3, 2020</p>
-            <h3>Tanner Linsley</h3>
-            <p>react-query</p>
-            <img src="tanner.png" alt="Tanner Linsley" />
-          </div>
-          <div className="guest">
-            <p>June 17, 2020</p>
-            <h3>Christina Gorton</h3>
-            <p>react + greensock</p>
-            <img src="christina.png" alt="Christina Gorton" />
-          </div>
-          <div className="guest">
-            <p>July 1, 2020</p>
-            <h3>Joram Clervius</h3>
-            <p>getting into tech</p>
-            <img src="joram-transparent.png" alt="Joram Clervius" />
-          </div>
+          <a href="https://twitter.com/tannerlinsley" target="_blank">
+            <div className="guest">
+              <p>June 3, 2020</p>
+              <h3>Tanner Linsley</h3>
+              <p>react-query</p>
+              <img src="tanner.png" alt="Tanner Linsley" />
+            </div>
+          </a>
+          <a href="https://twitter.com/coffeecraftcode" target="_blank">
+            <div className="guest">
+              <p>June 17, 2020</p>
+              <h3>Christina Gorton</h3>
+              <p>react + greensock</p>
+              <img src="christina.png" alt="Christina Gorton" />
+            </div>
+          </a>
+          <a href="https://twitter.com/swoleengineer" target="_blank">
+            <div className="guest">
+              <p>July 1, 2020</p>
+              <h3>Joram Clervius</h3>
+              <p>getting into tech</p>
+              <img src="joram-transparent.png" alt="Joram Clervius" />
+            </div>
+          </a>
+          <a href="https://twitter.com/swyx" target="_blank">
+            <div className="guest">
+              <p>July 15, 2020</p>
+              <h3>Shawn Wang</h3>
+              <p>The coding interview</p>
+              <img src="swyx.png" alt="Shawn Wang" />
+            </div>
+          </a>
         </div>
         <div className="flex-grow" />
         <p className="timer-wrapper">
@@ -206,16 +220,23 @@ const Home = () => {
           flex-flow: row wrap;
           height: 100%;
           align-items: center;
+          justify-content: center;
         }
 
         .guest {
           width: 250px;
           padding: 16px 16px 0;
-          margin: 0 32px;
+          margin: 32px;
           text-align: center;
+          cursor: pointer;
           background-color: #161e5a;
           border-radius: 12px;
           box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        }
+
+        main a {
+          color: #fff;
+          text-decoration: none;
         }
 
         .guest > img {
@@ -231,6 +252,21 @@ const Home = () => {
           font-size: 1.5em;
         }
 
+        @media (max-width: 1273px) {
+          .guest {
+            width: 200px;
+            margin: 16px;
+          }
+
+          .guest > p {
+            font-size: .8em;
+          }
+
+          .guest > h3 {
+            font-size: 1em;
+          }
+        }
+
         @media (max-width: 830px) {
           .timer {
             font-size: 2rem;
@@ -243,6 +279,12 @@ const Home = () => {
           }
         }
 
+        @media (max-width: 945px) {
+          .container {
+            overflow-y: scroll;
+          }
+        }
+
         @media (max-width: 600px) {
           .timer {
             font-size: 1.5rem;
@@ -250,7 +292,10 @@ const Home = () => {
           .subtitle {
             font-size: 1.5rem;
           }
-          .timer-wrapper,
+          .container {
+            height: auto;
+            overflow: hidden;
+          }
         }
       `}</style>
 
