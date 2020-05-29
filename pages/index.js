@@ -170,9 +170,9 @@ const Home = () => {
         }
 
         .logo-bg {
-          position: absolute;
+          position: fixed;
           bottom: -5%;
-          right: -5%;
+          right: -8%;
           width: 80%;
           max-width: 600px;
           overflow: hidden;
