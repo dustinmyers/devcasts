@@ -100,6 +100,7 @@ export default function MyApp({ Component, pageProps }) {
 
         .logo-image {
           width: 160px;
+          height: 53px;
         }
 
         @media (max-width: 830px) {
