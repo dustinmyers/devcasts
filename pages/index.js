@@ -2,7 +2,7 @@ import { useEffect, useState, useRef } from "react";
 import Head from "next/head";
 
 const Home = () => {
-  const countDownDate = new Date("Jun 03, 2020 15:00:00 MDT").getTime();
+  const countDownDate = new Date("Jun 10, 2020 15:00:00 MDT").getTime();
   const [counter, setCounter] = useState();
 
   useInterval(() => {
@@ -106,7 +106,7 @@ const Home = () => {
         <div className="guests">
           <a href="https://twitter.com/tannerlinsley" target="_blank">
             <div className="guest">
-              <p>June 3, 2020</p>
+              <p>June 10, 2020</p>
               <h3>Tanner Linsley</h3>
               <p>react-query</p>
               <img src="tanner.png" alt="Tanner Linsley" />
