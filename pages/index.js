@@ -140,7 +140,7 @@ const Home = () => {
         <div className="flex-grow" />
         <p className="timer-wrapper">
           Launching in <span className="timer">{counter}</span>
-          (Jun 10, 3pm MDT)
+          (Jun 17, 3pm MDT)
         </p>
       </main>
 
