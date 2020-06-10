@@ -2,7 +2,7 @@ import { useEffect, useState, useRef } from "react";
 import Head from "next/head";
 
 const Home = () => {
-  const countDownDate = new Date("Jun 03, 2020 15:00:00 MDT").getTime();
+  const countDownDate = new Date("Jun 10, 2020 15:00:00 MDT").getTime();
   const [counter, setCounter] = useState();
 
   useInterval(() => {
