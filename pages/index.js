@@ -2,7 +2,7 @@ import { useEffect, useState, useRef } from "react";
 import Head from "next/head";
 
 const Home = () => {
-  const countDownDate = new Date("Jun 10, 2020 15:00:00 MDT").getTime();
+  const countDownDate = new Date("Jun 17, 2020 15:00:00 MDT").getTime();
   const [counter, setCounter] = useState();
 
   useInterval(() => {
@@ -140,7 +140,7 @@ const Home = () => {
         <div className="flex-grow" />
         <p className="timer-wrapper">
           Launching in <span className="timer">{counter}</span>
-          (Jun 3, 3pm MDT)
+          (Jun 10, 3pm MDT)
         </p>
       </main>
 
