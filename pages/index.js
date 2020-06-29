@@ -112,14 +112,7 @@ const Home = () => {
               <img src="tanner.png" alt="Tanner Linsley" />
             </div>
           </a>
-          <a href="https://twitter.com/coffeecraftcode" target="_blank">
-            <div className="guest">
-              <p>June 24, 2020</p>
-              <h3>Christina Gorton</h3>
-              <p>React + Greensock</p>
-              <img src="christina.png" alt="Christina Gorton" />
-            </div>
-          </a>
+          
           <a href="https://twitter.com/swoleengineer" target="_blank">
             <div className="guest">
               <p>July 1, 2020</p>
@@ -136,12 +129,20 @@ const Home = () => {
               <img src="swyx.png" alt="Shawn Wang" />
             </div>
           </a>
+          <a href="https://twitter.com/coffeecraftcode" target="_blank">
+            <div className="guest">
+              <p>July 29, 2020</p>
+              <h3>Christina Gorton</h3>
+              <p>React + Greensock</p>
+              <img src="christina.png" alt="Christina Gorton" />
+            </div>
+          </a>
         </div>
         <div className="flex-grow" />
-        <p className="timer-wrapper">
+        {/*<p className="timer-wrapper">
           Next session in <span className="timer">{counter}</span>
           (Jun 24, 3pm MDT)
-        </p>
+        </p>*/}
       </main>
 
       <p>
